@@ -31,5 +31,7 @@ header nav {
   color: white;
 }
 header nav ul {
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
