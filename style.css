@@ -32,4 +32,7 @@ header nav ul {
   height: 10vh;
   margin: 5vw 0 5vw 0;
   color: white;
+  font-size: 0.8vw;
+  font-weight: 300;
+  letter-spacing: 0.1vw;
 }
