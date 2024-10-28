@@ -1,1 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  background-color: #cccccc;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 15vh;
+  background-color: red;
+}
+header #logo {
+  width: 10vh;
+  height: 10vh;
+  margin: 5vw;
+}
