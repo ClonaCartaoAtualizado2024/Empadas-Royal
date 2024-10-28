@@ -24,3 +24,9 @@ header #logo {
   height: 10vh;
   margin: 5vw;
 }
+header nav {
+  width: 50vw;
+  height: 10vh;
+  margin: 5vw;
+  color: white;
+}
