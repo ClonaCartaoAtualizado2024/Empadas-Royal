@@ -17,7 +17,7 @@ header {
   top: 0;
   width: 100vw;
   height: 15vh;
-  background-color: red;
+  background-color: #2e2a4f;
 }
 header #logo {
   width: 10vh;
@@ -29,4 +29,7 @@ header nav {
   height: 10vh;
   margin: 5vw;
   color: white;
+}
+header nav ul {
+  
 }
