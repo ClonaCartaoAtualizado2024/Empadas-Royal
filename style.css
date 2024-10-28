@@ -24,14 +24,12 @@ header #logo {
   height: 12vh;
   margin: 5vw;
 }
-header nav {
-  width: 50vw;
-  height: 10vh;
-  margin: 5vw;
-  color: white;
-}
 header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 50vw;
+  height: 10vh;
+  margin: 5vw;
+  color: white;
 }
