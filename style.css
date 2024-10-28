@@ -17,6 +17,7 @@ header {
   top: 0;
   width: 100vw;
   height: 15vh;
+  border-bottom: #e7ba80;
   background-color: #2e2a4f;
 }
 header #logo {
