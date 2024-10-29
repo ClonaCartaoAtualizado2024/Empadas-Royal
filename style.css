@@ -17,6 +17,8 @@ body {
 }
 
 header {
+  position: absolute;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,9 +47,9 @@ header nav ul {
   font-weight: 600;
   letter-spacing: 0.15vw;
 
-header nav ul::after {
-  content: '';
-  display: block;
+header nav ul ::before {
+  content: 'aaa';
+  display: inline-block;
   position: absolute;
   left: -5vw;
   width: 0.3vw;
