@@ -1,3 +1,10 @@
+:root {
+  --primaria: #323659;
+  --fundo: #5474a1;
+  --secundaria: #e7ba80;
+  --secundaria-2: #a06a47;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-  background-color: #fff;
+  background-color: var(--fundo);
   overflow-x: hidden;
 }
 
@@ -17,8 +24,8 @@ header {
   top: 0;
   width: 100vw;
   height: 15vh;
-  border-bottom: #e7ba80;
-  background-color: #2e2a4f;
+  border-bottom: var(--secundaria) 1vh solid;
+  background-color: var(--primaria);
 }
 header #logo {
   width: 15vh;
@@ -26,6 +33,7 @@ header #logo {
   margin: 0 5vw;
 }
 header nav ul {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,7 +41,16 @@ header nav ul {
   height: 10vh;
   margin: 0 5vw;
   color: white;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
   font-weight: 600;
   letter-spacing: 0.15vw;
+
+header nav ul::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -5vw;
+  width: 0.3vw;
+  height: 10vh;
+  background-color: var(--secundaria);
 }
