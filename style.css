@@ -17,8 +17,6 @@ body {
 }
 
 header {
-  position: absolute;
-  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,8 +24,9 @@ header {
   top: 0;
   width: 100vw;
   height: 15vh;
-  border-bottom: var(--secundaria) 1vh solid;
+  border-bottom: var(--secundaria) 0.5vh solid;
   background-color: var(--primaria);
+  z-index: 100;
 }
 header #logo {
   width: 15vh;
@@ -46,13 +45,20 @@ header nav ul {
   font-size: 1.3vw;
   font-weight: 600;
   letter-spacing: 0.15vw;
-
-header nav ul ::before {
-  content: 'aaa';
-  display: inline-block;
+}
+header nav ul::after {
+  content: '';
+  display: block;
   position: absolute;
   left: -5vw;
-  width: 0.3vw;
+  width: 0.1vw;
   height: 10vh;
   background-color: var(--secundaria);
+}
+
+
+main {
+  display: flex;
+  width: 90vw;
+  margin: 20vh 5vw;
 }
