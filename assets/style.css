@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Hammersmith+One&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Grape+Nuts&family=Hammersmith+One&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --primaria: #323659;
+    --fundo: #5474a1;
+    --secundaria: #e7ba80;
+    --secundaria-2: #a06a47;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+.titulo {
+    font-family: "Asset", serif;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5vw;
+}
+*::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: var(--secundaria);
+}
+*::-webkit-scrollbar-track {
+    background: var(--primaria);
+}
+
+body {
+    background-color: var(--fundo);
+    overflow-x: hidden;
+    width: 100vw;
+    height: min-content;
+}
+
+
+
+
+
+
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    border-bottom: var(--secundaria) 0.5vh solid;
+    background-color: var(--primaria);
+    z-index: 100;
+}
+header #logo {
+    width: 10vh;
+    height: 10vh;
+    margin: 0 5vw;
+}
+header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50vw;
+    height: 8vh;
+    margin: 0 5vw;
+    color: white;
+    font-size: 1.3vw;
+    font-weight: 600;
+    letter-spacing: 0.15vw;
+}
+header nav ul::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1vh;
+    left: -5vw;
+    width: 0.1vw;
+    height: 6vh;
+    background-color: var(--secundaria);
+}
+
+
+
+
+
+
+
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 10vh;
+    left: 0;
+    width: 100vw;
+    margin-bottom: 10vh;
+    padding: 3vw;
+}
+main article {
+    margin-bottom: 45vh;
+}
+
+
+
+
+
+main #display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25vw;
+    height: 90vh;
+    border-radius: 0 6vw 6vw 0;
+    background-color: var(--secundaria-2);
+}
+main #display img {
+    position: absolute;
+}
+main #display #leite {
+    height: 70vh;
+    transform: rotate(-50deg);
+    z-index: 10;
+}
+main #display #sparkles1 {
+    top: 3vh;
+    left: -15vw;
+    width: 46vw;
+    z-index: 5;
+}
+main #display #sparkles2 {
+    left: -15vw;
+    bottom: 4vh;
+    width: 45vw;
+    transform: scaleX(-1);
+    z-index: 15;
+}
+main #display #empadinha1 {
+    top: 6vh;
+    left: 4vw;
+    width: 9vw;
+    transform: rotate(-12deg);
+    z-index: 5;
+}
+main #display #empadinha2 {
+    left: 6vw;
+    bottom: 12vh;
+    width: 13vw;
+    transform: rotate(14deg);
+    z-index: 20;
+}
+main #display #empadinha3 {
+    top: 38vh;
+    left: 7vw;
+    width: 17vw;
+    transform: rotate(11deg) translateY(-50%);
+    z-index: 25;
+}
+main #display p {
+    position: absolute;
+    right: 4vw;
+    bottom: 1vh;
+    width: 15vw;
+    padding: 1vw;
+    border-radius: 2vw;
+    background-color: white;
+    text-align: center;
+    color: var(--secundaria-2);
+    letter-spacing: 0.1vw;
+    font-weight: 600;
+    font-size: 1vw;
+    z-index: 10;
+}
+
+
+
+
+
+main #saboresfavoritos {
+    width: 65vw;
+    margin-left: auto;
+    color: white;
+}
+main #saboresfavoritos h2 {
+    text-align: center;
+    font-size: 2.2vw;
+    margin-bottom: 4vh;
+}
+main #saboresfavoritos li {
+    position: relative;
+    width: 100%;
+    margin-bottom: 3vh;
+    list-style-type: none;
+}
+main #saboresfavoritos h3 {
+    position: relative;
+    width: 18vw;
+    padding: 0.7vw;
+    border-radius: 3vw;
+    text-align: center;
+    font-size: 1.6vw;
+    letter-spacing: 0.1vw;
+    background-color: var(--primaria);
+    z-index: 10;
+}
+main #saboresfavoritos .descricao {
+    position: relative;
+    left: 3vw;
+    top: -1vh;
+    width: 40vw;
+}
+main #saboresfavoritos .descricao p {
+    position: relative;
+    width: 100%;
+    padding: 1vw;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.5vw;
+    letter-spacing: 0.1vw;
+    z-index: 5;
+}
+main #saboresfavoritos .descricao .preco {
+    position: relative;
+    margin-left: auto;
+    top: -4vh;
+    width: 10vw;
+    padding: 0.6vw;
+    padding-top: 4vh;
+    border-radius: 0 0 2vw 2vw;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    z-index: 4;
+}
+main #saboresfavoritos .empadinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 2vw;
+    width: 15vw;
+    height: 15vw;
+    border-radius: 15vw;
+    background-color: var(--primaria);
+}
+main #saboresfavoritos .empadinha img {
+    position: absolute;
+    bottom: 5vw;
+    width: 12vw;
+    transform: translateY(3vh);
+}
+main #saboresfavoritos .empadinha .leite {
+    left: -1.5vw;
+    bottom: 2vw;
+    width: 20vw;
+}
+main #saboresfavoritos .empadinha .coroa {
+    top: -2vw;
+    right: 0;
+    width: 6vw;
+    transform: rotate(15deg);
+}
+
+
+
+
+
+
+
+
+
+
+main #embreve {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 94vw;
+}
+
+main #embreve #fitas .fita {
+    position: absolute;
+    top: 0;
+    left: -28vw;
+    width: 150vw;
+    height: 10vh;
+    background-image: url("img/tape.png");
+}
+main #embreve #fitas #fita1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 22vh;
+    transform: translate(0, 3vh) rotate(12deg);
+    z-index: 20;
+}
+main #embreve #fitas #fita1 p {
+    width: 150vw;
+    height: 14vh;
+    background-color: white;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 1.3vw;
+    word-spacing: 3vw;
+    line-height: 12vh;
+    font-weight: 900;
+}
+main #embreve #fitas #fita2 {
+    height: 12vh;
+    transform: translate(0, 15vh) rotate(-5deg);
+    z-index: 10;
+}
+main #embreve #fitas #fita3 {
+    height: 6vh;
+    transform: translate(0, -2vh) rotate(-2deg);
+    z-index: 11;
+}
+main #embreve #fitas #fita4 {
+    width: 50vw;
+    height: 9vh;
+    transform: translate(0, 19vh) rotate(-20deg);
+    z-index: 13;
+}
+main #embreve #fitas #fita5 {
+    width: 50vw;
+    height: 9vh;
+    transform: translate(80vw, 2vh) rotate(-12deg);
+    z-index: 13;
+}
+main #embreve #fitas #fita6 {
+    height: 10vh;
+    transform: translate(0, 80vh) rotate(-30deg);
+    z-index: 10;
+}
+main #embreve #fitas #fita7 {
+    height: 10vh;
+    transform: translate(-15vw, 90vh) rotate(25deg);
+    z-index: 10;
+}
+
+main #embreve #lista {
+    display: grid;
+    grid-template-columns: 41.5vw 41.5vw;
+    grid-template-rows: 40vh 40vh 40vh;
+    position: relative;
+    top: 50vh;
+    width: 90vw;
+    height: 131vh;
+    padding: 3vw;
+    border: var(--primaria) 0.5vw solid;
+    border-radius: 5vw;
+}
+main #embreve #lista .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw;
+    border-radius: 5vw;
+    margin: 2vw;
+    z-index: 20;
+}
+main #embreve #lista .item .empadinha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 15vw;
+    height: 15vw;
+    border: var(--primaria) 3vw dashed;
+    border-radius: 10vw;
+    background-color: #fff;
+}
+main #embreve #lista .item .empadinha img {
+    width: 13vw;
+}
+main #embreve #lista .item h3 {
+    width: 17vw;
+    padding: 3vw;
+    border-radius: 3vw;
+    background-color: white;
+    color: black;
+    font-size: 1.6vw;
+    font-weight: 700;
+    letter-spacing: 0.2vw;
+}
+
+main #embreve #placadecoracao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 25vw;
+    right: 8vw;
+    bottom: -100vh;
+    transform: rotate(-38deg) scale(1.5);
+}
+main #embreve #placadecoracao #placa {
+    position: absolute;
+    width: 12vw;
+    top: 0;
+    z-index: 15;
+}
+main #embreve #placadecoracao #placahaste {
+    position: absolute;
+    width: 6vw;
+    bottom: 0;
+    z-index: 10;
+}

@@ -4,33 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empadas Royale</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="main.js" defer></script>
 </head>
     
 <body>
+
     <header>
         <img id="logo" src="assets/img/logo.png">
         <nav>
             <ul>
                 <li>Sabores Favoritos</li>
                 <li>Sabores em breve</li>
-                <li>Bebidas</li>
+                <li>Combos</li>
+                <li>Contato</li>
             </ul>
         </nav>
     </header>
+
     <main>
-        <article>
-            <h2
-            <section>
-                <h3>Sabores Favoritos</h2>
-                <ul>
-                    <li>
-                        <h4>Empadinha de Frango com Requeijão</h3>
-                        <p id="ingredientes">Recheado com frango e requeijão cremoso, um sabor único e delicioso, sabores vivos e apaixonantes!</p>
-                    </li>
-                </ul>
-            </section>
+
+        <div id="display">
+            <img src="assets/img/display/leite.png" id="leite">
+            <img src="assets/img/display/empadinhadisplay1.png" id="empadinha1">
+            <img src="assets/img/display/empadinhadisplay2.png" id="empadinha2">
+            <img src="assets/img/display/empadinhadisplay3.png" id="empadinha3">
+            <img src="assets/img/display/sparkles.png" id="sparkles1">
+            <img src="assets/img/display/sparkles.png" id="sparkles2">
+            <p>Frango com Requeijão</p>
+        </div>
+        
+        <article id="saboresfavoritos">
+            <h2 class="titulo">SABORES FAVORITOS!</h2>
+            <ul>
+                <li>
+                    <h3>Empadinha de Frango com Requeijão</h3>
+                    <div class="descricao">
+                        <p>Recheado com frango e requeijão cremoso, um sabor único e delicioso, sabores vivos e apaixonantes!</p>
+                        <div class="preco">por: R$6,00</div>
+                    </div>
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/leiteempada.png" class="leite">
+                        <img src="assets/img/empadas/frangorequeijao.png">
+                        <img src="assets/img/empadas/coroa.png" class="coroa">
+                    </span>
+                </li>
+                <li>
+                    <h3>Empadinha de Doce de Leite</h3>
+                    <div class="descricao">
+                        <p>Uma massa folhada deliciosa e única, molhada e amassada no leite cremoso, com um recheio de doce de leite de receita caseira e especial!</p>
+                        <div class="preco">por: R$4,00</div>
+                    </div>
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/leiteempada.png" class="leite">
+                        <img src="assets/img/empadas/docedeleite.png">
+                    </span>
+                </li>
+            </ul>
         </article>
+
+        
+        <article id="embreve">
+            <div id="fitas">
+                <div class="fita" id="fita1"><p>EM BREVE</p></div>
+                <div class="fita" id="fita2"></div>
+                <div class="fita" id="fita3"></div>
+                <div class="fita" id="fita4"></div>
+                <div class="fita" id="fita5"></div>
+                <div class="fita" id="fita6"></div>
+                <div class="fita" id="fita7"></div>
+            </div>
+
+            <div id="lista">
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/camarao.png">
+                    </span>
+                    <h3>Empadinha de Camarão</h3>
+                </div>
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/palmito.png">
+                    </span>
+                    <h3>Empadinha de Palmito</h3>
+                </div>
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/romeuejulieta.png">
+                    </span>
+                    <h3>Empadinha de Romeu e Julieta</h3>
+                </div>
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/cogumelo.png">
+                    </span>
+                    <h3>Empadinha de Cogumelo</h3>
+                </div>
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/carneseca.png">
+                    </span>
+                    <h3>Empadinha de Carne Seca</h3>
+                </div>
+                <div class="item">
+                    <span class="empadinha">
+                        <img src="assets/img/empadas/bolonhesa.png">
+                    </span>
+                    <h3>Empadinha a Bolonhesa</h3>
+                </div>
+            </div>
+
+            <span id="placadecoracao">
+                <img src="assets/img/placa.png" id="placa">
+                <img src="assets/img/placahaste.png" id="placahaste">
+            </span>
+        </article>
+
+
+        <article>
+
+        </article>
+
     </main>
 </body>
     
