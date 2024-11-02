@@ -100,20 +100,15 @@ header nav ul::after {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    top: 10vh;
-    left: 0;
+    align-items: center;
     width: 100vw;
-    margin-bottom: 10vh;
     padding: 3vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 main article {
     margin-bottom: 45vh;
 }
-
-
-
 
 
 main #display {
@@ -121,7 +116,7 @@ main #display {
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0;
+    top: 10vh;
     left: 0;
     width: 25vw;
     height: 90vh;
@@ -185,9 +180,6 @@ main #display p {
     font-size: 1vw;
     z-index: 10;
 }
-
-
-
 
 
 main #saboresfavoritos {
@@ -294,6 +286,7 @@ main #embreve {
     justify-content: center;
     position: relative;
     width: 94vw;
+    height: 190vh;
 }
 
 main #embreve #fitas .fita {
@@ -320,7 +313,7 @@ main #embreve #fitas #fita1 p {
     font-size: 5vw;
     letter-spacing: 1.3vw;
     word-spacing: 3vw;
-    line-height: 12vh;
+    line-height: 13vh;
     font-weight: 900;
 }
 main #embreve #fitas #fita2 {
@@ -360,10 +353,8 @@ main #embreve #lista {
     display: grid;
     grid-template-columns: 41.5vw 41.5vw;
     grid-template-rows: 40vh 40vh 40vh;
-    position: relative;
-    top: 50vh;
+    margin-top: 50vh;
     width: 90vw;
-    height: 131vh;
     padding: 3vw;
     border: var(--primaria) 0.5vw solid;
     border-radius: 5vw;
@@ -387,9 +378,27 @@ main #embreve #lista .item .empadinha {
     border: var(--primaria) 3vw dashed;
     border-radius: 10vw;
     background-color: #fff;
+    animation: embreve-empadinha 15s linear infinite;
+}
+@keyframes embreve-empadinha {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 main #embreve #lista .item .empadinha img {
     width: 13vw;
+    animation: embreve-empadinha-img 15s linear infinite;
+}
+@keyframes embreve-empadinha-img {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
 }
 main #embreve #lista .item h3 {
     width: 17vw;
@@ -408,8 +417,8 @@ main #embreve #placadecoracao {
     align-items: center;
     position: absolute;
     height: 25vw;
-    right: 8vw;
-    bottom: -100vh;
+    right: 6vw;
+    bottom: -40vh;
     transform: rotate(-38deg) scale(1.5);
 }
 main #embreve #placadecoracao #placa {
@@ -423,4 +432,89 @@ main #embreve #placadecoracao #placahaste {
     width: 6vw;
     bottom: 0;
     z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+main #comboslista {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main #comboslista h2 {
+    width: 75vw;
+    margin-bottom: 15vh;
+    color: white;
+    text-align: center;
+    font-size: 5vw;
+    letter-spacing: 1.5vw;
+}
+
+
+main #combosgrid {
+    display: grid;
+    grid-template-columns: 26vw 26vw 26vw;
+    grid-template-rows: 60vh 60vh;
+    width: 79vw;
+    color: white;
+}
+main #combosgrid .combo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+main #combosgrid .combo h3 {
+    width: 25vw;
+    text-align: center;
+    font-size: 2.6vw;
+    letter-spacing: 0.2vw;
+}
+main #combosgrid .combo p {
+    position: absolute;
+    width: 15vw;
+    margin-top: 3vw;
+    text-align: center;
+    font-size: 1.2vw;
+    letter-spacing: 0.07vw;
+    z-index: 10;
+}
+main #combosgrid .combo .preco {
+    margin-top: 16vw;
+    color: var(--secundaria);
+    font-size: 1vw;
+    letter-spacing: 0.2vw;
+}
+main #combosgrid .combo .dia {
+    width: auto;
+    padding: 0.5vw 1vw;
+    border-radius: 2.5vw;
+    margin-left: 10vw;
+    margin-bottom: 16vw;
+    background-color: white;
+    color: black;
+    font-size: 2.4vw;
+    letter-spacing: 0.2vw;
+}
+main #combosgrid .combo img {
+    position: relative;
+    width: 23vw;
+    z-index: 5;
+    animation: combo-img 15s linear infinite;
+}
+@keyframes combo-img {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
