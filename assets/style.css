@@ -576,6 +576,99 @@ main #combosgrid::before {
 
 
 
+main #creditos {
+    position: relative;
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 34vw;
+    grid-template-rows: 20vw 20vw;
+    width: 94vw;
+    padding: 3vw;
+}
+main #creditos h2{
+    position: absolute;
+    top: -8vh;
+    width: 94vw;
+    color: white;
+    text-align: center;
+    font-size: 3vw;
+    letter-spacing: 0.5vw;
+    word-spacing: 3vw;
+}
+main #creditos .item {
+    position: relative;
+    width: 16vw;
+    height: 18vw;
+    border-radius: 1vw;
+    margin: 1vw 1vw;
+    background-color: var(--primaria);
+    z-index: 5;
+}
+main #creditos .item p {
+    position: absolute;
+    bottom: 0;
+    width: 16vw;
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 100;
+    letter-spacing: 0.4vw;
+}
+main #creditos .item img {
+    position: relative;
+    width: 16vw;
+    border-radius: 1vw;
+    z-index: 10;
+}
+
+main #creditos .item .emoji {
+    position: absolute;
+    bottom: 1vw;
+    left: -1.4vw;
+    width: 5vw;
+    transform: rotate(-7deg);
+    z-index: 15;
+}
+main #creditos .item .emoji.dir {
+    left: auto;
+    right: -1.4vw;
+    transform: rotate(9deg);
+}
+main #creditos .item .emoji.cim {
+    bottom: auto;
+    top: -1vw;
+}
+
+main #creditos #creditosdisplay {
+    width: 32vw;
+    height: 40vw;
+    border-radius: 2vw;
+    margin: 0 1vw;
+    background-color: var(--primaria);
+    grid-column: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-image: url("img/creditos/creditosdisplay.png");
+    background-repeat: repeat-x;
+    background-size: auto 40vw;
+    animation: creditosdisplay 60s infinite linear;
+}
+@keyframes creditosdisplay {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -294vw;
+    }
+}
+
+
+
+
+
+
+
+
+
 footer {
     display: grid;
     grid-template-columns: 20vw 22.5vw 5vw 22.5vw 20vw;
@@ -617,13 +710,12 @@ footer #olho {
     position: relative;
     width: 5vw;
     grid-column: 3;
+    background-image: url("img/olho.png");
+    background-size: 5vw 5vw;
+    background-position: -50%;
 }
 footer #olho:hover #criadores {
     display: block;
-}
-footer #olho img {
-    width: 5vw;
-    object-fit: scale-down;
 }
 footer #olho #criadores {
     display: none;
