@@ -107,7 +107,7 @@ main {
     margin-bottom: 10vh;
 }
 main article {
-    margin-bottom: 45vh;
+    margin-bottom: 60vh;
 }
 
 
@@ -183,9 +183,21 @@ main #display p {
 
 
 main #saboresfavoritos {
+    position: relative;
     width: 65vw;
     margin-left: auto;
     color: white;
+}
+main #saboresfavoritos::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -33vw;
+    bottom: -20vh;
+    width: 80vw;
+    height: 0.2vh;
+    margin: 0 10vw;
+    background-color: white;
 }
 main #saboresfavoritos h2 {
     text-align: center;
@@ -282,11 +294,22 @@ main #saboresfavoritos .empadinha .coroa {
 
 
 main #embreve {
+    position: relative;
     display: flex;
     justify-content: center;
-    position: relative;
     width: 94vw;
     height: 190vh;
+}
+main #embreve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -3vw;
+    bottom: -30vh;
+    width: 80vw;
+    height: 0.2vh;
+    margin: 0 10vw;
+    background-color: white;
 }
 
 main #embreve #fitas .fita {
@@ -459,6 +482,7 @@ main #comboslista h2 {
 
 
 main #combosgrid {
+    position: relative;
     display: grid;
     grid-template-columns: 26vw 26vw 26vw;
     grid-template-rows: 60vh 60vh;
@@ -517,4 +541,28 @@ main #combosgrid .combo img {
     to {
         transform: rotate(360deg);
     }
+}
+main #combosgrid #prato {
+    position: relative;
+    right: -5vw;
+    bottom: -5vh;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 50vw;
+    background-color: var(--primaria);
+}
+main #combosgrid #prato img {
+    position: absolute;
+    top: 5vh;
+    width: 35vw;
+}
+main #combosgrid::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10vh;
+    width: 55vw;
+    height: 0.2vh;
+    background-color: white;
 }
