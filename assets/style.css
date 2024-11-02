@@ -566,3 +566,85 @@ main #combosgrid::before {
     height: 0.2vh;
     background-color: white;
 }
+
+
+
+
+
+
+
+
+
+
+footer {
+    display: grid;
+    grid-template-columns: 20vw 22.5vw 5vw 22.5vw 20vw;
+    grid-template-rows: 40vh 8vh; 
+    width: 100vw;
+    padding: 5vw;
+    border-top: var(--secundaria) 0.5vh solid;
+    background-color: var(--primaria);
+}
+footer #logo {
+    width: 18vw;
+    height: 40vh;
+    margin-right: auto;
+    object-fit: scale-down;
+}
+footer a {
+    width: 14vw;
+    margin-left: auto;
+}
+footer a #instagram {
+    width: 14vw;
+    height: 40vh;
+    object-fit: scale-down;
+    grid-column: 5;
+}
+footer #info {
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+footer #info p {
+    margin-bottom: 10vh;
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 100;
+    letter-spacing: 0.3vw;
+}
+footer #olho {
+    position: relative;
+    width: 5vw;
+    grid-column: 3;
+}
+footer #olho:hover #criadores {
+    display: block;
+}
+footer #olho img {
+    width: 5vw;
+    object-fit: scale-down;
+}
+footer #olho #criadores {
+    display: none;
+    position: absolute;
+    left: -12.5vw;
+    bottom: 9vh;
+    width: 30vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    background-color: white;
+}
+footer #olho #criadores h4 {
+    text-align: center;
+    font-size: 1.3vw;
+    font-weight: 400;
+    letter-spacing: 0.2vw;
+}
+footer #olho #criadores p {
+    margin: 2vh;
+    text-align: center;
+    font-size: 1vw;
+    font-weight: 400;
+    letter-spacing: 0.15vw;
+}
