@@ -622,6 +622,7 @@ main #creditos {
     grid-template-rows: 20vw 20vw;
     width: 94vw;
     padding: 3vw;
+    margin-bottom: 15vh;
 }
 main #creditos h2{
     position: absolute;
