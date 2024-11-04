@@ -12,13 +12,13 @@
 <body>
 
     <header>
-        <img id="logo" src="assets/img/logo.png">
+        <a href="."><img id="logo" src="assets/img/logo.png"></a>
         <nav>
             <ul>
-                <li>Sabores Favoritos</li>
-                <li>Sabores em breve</li>
-                <li>Combos</li>
-                <li>Contato</li>
+                <li><a href="#saboresfavoritos">Sabores Favoritos</a></li>
+                <li><a href="#embreve">Sabores em breve</a></li>
+                <li><a href="#combosgrid">Combos</a></li>
+                <li><a href="#footer">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -39,7 +39,13 @@
             <h2 class="titulo">SABORES FAVORITOS!</h2>
             <ul>
                 <li>
-                    <h3>Empadinha de Frango com Requeijão</h3>
+                    <h3>
+                        Empadinha de Frango com Requeijão
+                        <div class="pix">
+                            <img src="assets/img/qrcodepix.png">
+                            <p>PIX</p>
+                        </div>
+                    </h3>
                     <div class="descricao">
                         <p>Recheado com frango e requeijão cremoso, um sabor único e delicioso, sabores vivos e apaixonantes!</p>
                         <div class="preco">por: R$6,00</div>
@@ -51,7 +57,13 @@
                     </span>
                 </li>
                 <li>
-                    <h3>Empadinha de Doce de Leite</h3>
+                    <h3>
+                        Empadinha de Doce de Leite
+                        <div class="pix">
+                            <img src="assets/img/qrcodepix.png">
+                            <p>PIX</p>
+                        </div>
+                    </h3>
                     <div class="descricao">
                         <p>Uma massa folhada deliciosa e única, molhada e amassada no leite cremoso, com um recheio de doce de leite de receita caseira e especial!</p>
                         <div class="preco">por: R$4,00</div>
@@ -202,9 +214,31 @@
             <h2 class="titulo">DONAS DA LOJA</h2>
         </article>
 
+        <article id="avaliacao">
+            <h2 class="titulo">SUA AVALIAÇÃO FAZ A DIFERENÇA</h2>
+            <div id="avaliacaogrid">
+                <div id="qrcode">
+                    <img src="assets/img/qrcodeavaliacao.png">
+                </div>
+                <div class="respostaavaliacao">
+                    <div>
+                        <h3>Oque achou da nossa loja?</h3>
+                        <p>- Maravilhosa, um site funcional, ingredientes de altissíma qualidade!</p>
+                    </div>
+                </div>
+                <span></span>
+                <div class="respostaavaliacao">
+                    <div>
+                        <h3>Oque achou da nossa loja?</h3>
+                        <p>- Muito boa, mas pode melhorar a dinâmica!</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
     </main>
 
-    <footer>
+    <footer id="footer">
         <img src="assets/img/logo.png" id="logo">
         <div id="info">
             <p id="endereco">Rua Maria Theodora de Paula Costa, 49<br>Jardim das Américas, Curitiba - PR, 81530-270</p>
